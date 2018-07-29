@@ -149,45 +149,9 @@
                                             <div class="">
                                                 <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
                                                 <hr>
-                                                <small>10 - 05 -2017</small>
+                                                <small>10 - 04 -2017</small>
                                                 <br>
-                                                <small><strong>Autqqhor</strong></small>
-                                                <hr>
-                                                <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Nulla quis lorem ut libero malesuada feugiat. <br>
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.</p>
-                                            </div>
-                                            <div class="">
-                                                <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
-                                                <hr>
-                                                <small>10 - 05 -2017</small>
-                                                <br>
-                                                <small><strong>Autqqhor</strong></small>
+                                                <small><strong>Author</strong></small>
                                                 <hr>
                                                 <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
                  Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
@@ -224,56 +188,33 @@
                             </div>
                             <div class="row">
                                 <div class="container">
-                                    <div class="col-md-10 col-lg-8" style="left: 75px;" id="commentaire" data-pg-name="commentaire">
+                              
+                                    <div class="col-md-10" style="left: 75px;">
                                         <h2 class="page-header">Comments</h2>
-                                        <!-- First Comment -->
-                                        <form action="/action_page.php" style="margin-bottom: 22px;">
-                                            <div class="form-group">
-                                                <label for="email">Nom:</label>
-                                                <input type="text" class="form-control" id="email" placeholder="Entrer votre nom" name="nom">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="comment">Comment:</label>
-                                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-default">Commenter !</button>
-                                        </form>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="container">
-                                                <h4>NOM du commentaire</h4>
-                                                <p>Resulta de commentaire</p>
-                                                <hr>
-                                            </div>
-                                            <div class="container">
-                                                <h4>NOM du commentaire</h4>
-                                                <p>Resulta de commentaire</p>
-                                                <hr>
-                                            </div>
-                                            <div class="container">
-                                                <h4>NOM du commentaire</h4>
-                                                <p>Resulta de commentaire</p>
-                                                <hr>
-                                            </div>
-                                        </div>
+                                        <section class="comment-list">
+                                            <!-- First Comment -->
+
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 py-5 text-right" style="background-color: rgba(52, 46, 44, 0.91);">
-                                <h6 style="color: #ffffff;">©Company 2018</h6>
-                            </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 py-5 text-right" style="background-color: rgba(52, 46, 44, 0.91);">
+                            <h6 style="color: #ffffff;">©Company 2018</h6>
                         </div>
                     </div>
-                </footer>
-                <!--scripts loaded here-->
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-                <script src="//unpkg.com/feather-icons@4.7.0/dist/feather.min.js"></script>
-                <script src="js/scripts.js"></script>
+                </div>
+            </footer>
+            <!--scripts loaded here-->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//unpkg.com/feather-icons@4.7.0/dist/feather.min.js"></script>
+            <script src="js/scripts.js"></script>

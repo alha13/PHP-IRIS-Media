@@ -137,90 +137,42 @@
                             <div class="row">
                                 <!--/panel-->
                                 <!--/end right column-->
-                                <div class="well">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row hidden-md hidden-lg">
-                                                <h1 class="text-center">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
-                                            </div>
-                                            <div class="pull-left col-md-4 col-xs-12 thumb-contenido">
-                                                <img class="img-fluid" src='img/E7440.png'/>
-                                            </div>
-                                            <div class="">
-                                                <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
-                                                <hr>
-                                                <small>10 - 05 -2017</small>
-                                                <br>
-                                                <small><strong>Autqqhor</strong></small>
-                                                <hr>
-                                                <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Nulla quis lorem ut libero malesuada feugiat. <br>
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.</p>
-                                            </div>
-                                            <div class="">
-                                                <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
-                                                <hr>
-                                                <small>10 - 05 -2017</small>
-                                                <br>
-                                                <small><strong>Autqqhor</strong></small>
-                                                <hr>
-                                                <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Nulla quis lorem ut libero malesuada feugiat. <br>
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                <div class="container">
+
+    <h3>Heading 3</h3>
+    <h2>Heading 2</h2>
+    <hr>
+</div>
+
+<div class="container">
+    <img src="http://placehold.it/350X350" class="img-fluid">
+
+    <img src="http://placehold.it/150X150" style="height: 400px; widht:600px" class="img-thumbnail">
+    
+    <hr>
+</div>
+
+<div class="container">
+    <p class="textdate">Date:  23/12/1997</p>
+
+    <p class="textsource">Sources: FRANCE24</p>
+<hr>
+  
+    
+    </div>
+    <div class="container">
+        
+        <p>Content herehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere
+        hereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere
+        hereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere
+        herehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere
+        hereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere
+        herehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehereherehere</p>
+        
+        <hr>
+    </div>
+                              
                             </div>
                             <div class="row">
                                 <div class="container">
@@ -245,16 +197,17 @@
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
-                                            <div class="container">
+                                             <div class="container">
                                                 <h4>NOM du commentaire</h4>
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
-                                            <div class="container">
+                                             <div class="container">
                                                 <h4>NOM du commentaire</h4>
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>

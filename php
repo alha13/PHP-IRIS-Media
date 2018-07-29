@@ -149,45 +149,9 @@
                                             <div class="">
                                                 <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
                                                 <hr>
-                                                <small>10 - 05 -2017</small>
+                                                <small>10 - 04 -2017</small>
                                                 <br>
-                                                <small><strong>Autqqhor</strong></small>
-                                                <hr>
-                                                <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.<br><br>
-                 Nulla quis lorem ut libero malesuada feugiat. <br>
-                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
-                 Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
-                 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
-                 Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                 convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.
-                 Donec rutrum congue leo eget malesuada.</p>
-                                            </div>
-                                            <div class="">
-                                                <h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA INVESTIGACION cualquiera</h1>
-                                                <hr>
-                                                <small>10 - 05 -2017</small>
-                                                <br>
-                                                <small><strong>Autqqhor</strong></small>
+                                                <small><strong>Author</strong></small>
                                                 <hr>
                                                 <p class="text-justify">Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
                  Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
@@ -227,7 +191,7 @@
                                     <div class="col-md-10 col-lg-8" style="left: 75px;" id="commentaire" data-pg-name="commentaire">
                                         <h2 class="page-header">Comments</h2>
                                         <!-- First Comment -->
-                                        <form action="/action_page.php" style="margin-bottom: 22px;">
+                                        <form action="/action_aaapage.php" style="margin-bottom: 22px;">
                                             <div class="form-group">
                                                 <label for="email">Nom:</label>
                                                 <input type="text" class="form-control" id="email" placeholder="Entrer votre nom" name="nom">
@@ -245,16 +209,17 @@
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
-                                            <div class="container">
+                                             <div class="container">
                                                 <h4>NOM du commentaire</h4>
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
-                                            <div class="container">
+                                             <div class="container">
                                                 <h4>NOM du commentaire</h4>
                                                 <p>Resulta de commentaire</p>
                                                 <hr>
                                             </div>
+                                        
                                         </div>
                                     </div>
                                 </div>

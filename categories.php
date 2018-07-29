@@ -3,8 +3,6 @@
 require_once("config/connectbd.php");
 
 
-
-
 if (isset($_GET['cat'])) {
 $id = $_GET["cat"];
 //echo $id .' " " ';

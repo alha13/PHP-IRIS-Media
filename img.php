@@ -21,9 +21,9 @@ require_once("config/connectbd.php");
 
 
     }*/
-$query = $bd->query("SELECT * FROM categorie")->fetch();
+/*$query = $bd->query("SELECT * FROM categorie")->fetchAll();
                                   foreach ($value = $query  ) {
                                    echo' <a href="index.php?cat='.$value[0].'" class="nav-link text-purple px-0" style="background-color: #babbbc; color: #ffffff; text-align: center; margin-bottom: 5px;"><b>' .strtoupper($value[1] ).'</b></a>';
                                    //echo "<hr>";
-                                    }
+                                    }*/
     ?>  

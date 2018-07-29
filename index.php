@@ -70,6 +70,8 @@ require_once("config/connectbd.php");
             </div>
         </nav>
         <!-- /.navbar -->
+
+
         <header class="masthead" id="logo" style="background-color: rgba(215, 55, 2, 0);">
             <div class="container py-5 bg-white">
                 <div class="row align-items-center">
@@ -82,6 +84,10 @@ require_once("config/connectbd.php");
                 </div>
             </div>
         </header>
+
+
+
+        
         <!-- Begin Body -->
         <div class="container bg-white">
             <div class="no-gutters row">
@@ -349,6 +355,9 @@ if (isset($_GET['cat'])) {
                 </div>
             </div>
         </div>
+
+
+
         <footer>
             <div class="container">
                 <div class="row">

@@ -17,13 +17,14 @@ require_once("config/connectbd.php");
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/theme.css"/>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body class="bg-light">
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #ee5017;">
@@ -160,7 +161,7 @@ require_once("config/connectbd.php");
                                     default:
                                       echo ("<b>LE</b>");break;  
                                 }}?>
-                                <?php
+                                <!-- <?php
                                  /*else{
 
                                     if (isset($_GET['cat'])) {
@@ -188,7 +189,7 @@ require_once("config/connectbd.php");
                             echo ("<b>LE TOP DE L'ACTUS</b>");   
                         }*/
                       
-                        ?>
+                        ?> -->
 
 
 

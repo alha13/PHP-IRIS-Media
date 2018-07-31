@@ -1,3 +1,8 @@
+<div class="card-header rounded-0 text-white" style="background-color: rgba(237, 63, 0, 0.91); margin-bottom: 25px;">
+bonjour
+</div>
+
+
 <div class="row">
     <!--/card-body-->
     <div class="thumbnail" style="width: 374px; margin-right: 25px; margin-left: 76px;">

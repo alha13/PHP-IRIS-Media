@@ -133,93 +133,87 @@ require_once("config/connectbd.php");
                 <!-- right content column-->
                 <div class="col-lg-10 col-md-10" id="content">
                     <div class="card rounded-0 border-right-0 border-left-0">
-                        <div class="card-header rounded-0 text-white" style="background-color: rgba(237, 63, 0, 0.91); margin-bottom: 25px; text-align: center;">  
-<?php 
-if (isset($_GET['page'])) {
+                        <div class="card-header rounded-0 text-white" style="background-color: rgba(237, 63, 0, 0.91); margin-bottom: 25px;"> 
 
- switch ($_GET['page']) {
-                            case 'art':
-                            $titre = 'ARTICLES';
-                              echo '<b>'.strtoupper($titre).'</b>';
-                            break;
+                            <?php 
 
-
-                            case 'vid':
-                            $titre = 'Videos';
-                            echo '<b>'.strtoupper($titre).'</b>';
-                            break;
-
-
-                            case 'aud':
-                            $titre = 'audios';
-                            echo '<b>'.strtoupper($titre).'</b>';
-                            break;
-
-
-                            case 'alb':
-                            $titre = 'albums';
-                            echo '<b>'.strtoupper($titre).'</b>';
-                            break;
-
-
-                            case 'ann':
-                            $titre = 'Annonces';
-                            echo '<b>'.strtoupper($titre).'</b>';
-                            break;
-
-
-                            default:
-                             echo ("<b>LE TOP DE L'ACTUS</b>");
-                            break;  
-                             
-                        }
-                      } /*else echo ("<b>LE TOP DE L'ACTUS</b>");*/
-?>
-
-<?php
-/*$query = $bd->query("SELECT * FROM categorie");*/
-
-$id = 0;
-
-                                
-  
-
-                         if (isset($_GET['cat'])) {
-                          $id = $_GET["cat"];
-//echo $id .' " " ';
-$sql2 = "SELECT * FROM  categorie t2 where t2.id_categorie = $id  ";
-$query2 = $bd->prepare($sql2);
-$query2->execute(array("id" => $id));
-$resultat = $query2->fetch();
-                             switch ($_GET['cat']) {
-                                    
-                                     case $resultat['id_categorie']:
+                            
+                           if (isset($_GET['page'])) {
+                             switch ($_GET['page']) {
+         
+                                case 'art':
            
-                                         $titre = $resultat['libele_categorie'];
-                                            echo '<b>'.strtoupper($titre).'</b>';
-                                         break; 
+                                    $titre = 'ARTICLES';
+                                      echo strtoupper($titre);
+                                    break;
+                                    case 'vid':
+           
+                                    $titre = 'Videos';
+                                      echo strtoupper($titre);
+                                    break;
+                                    case 'aud':
+           
+                                    $titre = 'audios';
+                                      echo strtoupper($titre);
+                                    break;
+                                    case 'alb':
+           
+                                    $titre = 'albums';
+                                      echo strtoupper($titre);
+                                    break;
+                                    case 'ann':
+           
+                                    $titre = 'Annonces';
+                                      echo strtoupper($titre);
+                                    break;
+                                    default:
+                                      echo ("<b>LE</b>");break;  
+                                }}
+                                echo("arg1")
+                                ?>
 
-                                           default:
-                                          echo ("<b>LE TOP DE L'ACTUS</b>");
-                                          break;  
+
+                                <!-- <?php
+                                 /*else{
+
+                                    if (isset($_GET['cat'])) {
+                             switch ($_GET['cat']) {
+                                    $query = $bd->query("SELECT * FROM categorie");
+                                
+                                while($resultat = $query->fetch())  {
+                                    
+         
+                                    case $resultat['id_categorie']:
+           
+                                    $titre = $resultat['libele_categorie'];
+                                      echo strtoupper($titre);
+                                    break; 
+
+                                    default:
+                                      echo ("<b>LE TOP DE L'ACTUS</b>");break;  
                                 }
                                     
                                
-                             } else {
+                                            }
+                                        }
+                                }*/
+                        /* else {
                             echo ("<b>LE TOP DE L'ACTUS</b>");   
-                        }
-  
-                                
+                        }*/
                       
-                      
-?>
+                        ?> -->
 
 
 
                         </div>
+   
+
+
+
+
                         <div class="container">
                             
-                               <?php 
+  <?php 
                            
                       
 

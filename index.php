@@ -177,16 +177,14 @@ if (isset($_GET['page'])) {
 ?>
 
 <?php
-/*$query = $bd->query("SELECT * FROM categorie");*/
+
 
 $id = 0;
 
-                                
-  
 
                          if (isset($_GET['cat'])) {
                           $id = $_GET["cat"];
-//echo $id .' " " ';
+
 $sql2 = "SELECT * FROM  categorie t2 where t2.id_categorie = $id  ";
 $query2 = $bd->prepare($sql2);
 $query2->execute(array("id" => $id));

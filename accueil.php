@@ -136,24 +136,25 @@ $resultat = $query2->fetch();
 
 
 
-<!---debut POLITIQUES---->
-
 <!-- Section: Magazine v.2 -->
-<section class="magazine-section my-5">
+<!---debut POLITIQUES---->
+<?php
+$query = $bd->query("SELECT * FROM categorie")->fetchAll();
+    foreach ($query as $key => $value) {
 
-    <?php
-    $sql2 = "SELECT * FROM articles  where publie_articles = 1 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
+
+echo '<section class="magazine-section my-5">';
+
+   
+    $sql2 = "SELECT * FROM articles  where publie_articles = 1 AND id_categorie = $value[0] ORDER BY id_articles DESC LIMIT 5";
      $query2 = $bd->query($sql2);
-   // $query2 = $bd->prepare($sql2);
-    //$query2->execute();
-
-
 
 $resultat = $query2->fetch(); 
- //while ($resultat = $query2->fetch()) {
 
-  echo '<!-- Section heading -->';;
-  echo' <h2 class="h1-responsive font-weight-bold text-center my-5">POLITIQUES</h2>';
+
+  echo '<!-- Section azo heading -->';
+
+  echo' <h3 class="h1-responsive font-weight-bold text-center my-5" style="" id=""> '.strtoupper($value[1]).'</h3>'; 
  echo' <hr>';
   echo'<!-- Section description -->';
   
@@ -170,31 +171,31 @@ $resultat = $query2->fetch();
       echo'  <!-- Image -->';
        echo' <div class="view overlay rounded z-depth-1-half mb-4">';
 
-        /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
+        
+             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src="'.$resultat['image_articles'].'">';
        
-                                   }else {
-                                    echo '<img class="img-fluid" src="upload/default.png" >';
-                                     //echo 'src="update/d.png"} ';
-                                   }
+             }else {
+              echo '<img class="img-fluid" src="upload/default.png" >';
+               //echo 'src="update/d.png"} ';
+             }
                   
 
 
-       echo'   <a>';
-          echo'  <div class="mask rgba-white-slight"></div>';
-        echo'  </a>';
-      echo'  </div>';
+       echo'<a>';
+          echo'<div class="mask rgba-white-slight"></div>';
+        echo'</a>';
+      echo'</div>';
 
         echo'<!-- Data -->';
         echo'<div class="news-data d-flex justify-content-between">';
-       //  echo' <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold"><i class="fa fa-cutlery pr-2"></i>'. $resultat['libele_categorie'].'</h6></a>';
+       
          echo' <p class="font-weight-bold dark-grey-text"><i class="fa fa-clock-o pr-2"></i>'. $resultat['date_articles'] .'</p>';
        echo' </div>';
 
        echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
+      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black;'> <a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none;' </a>".$resultat['titre_articles']." </h3>";
 
-      echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
+      echo'<p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"> <h4>'. $resultat['description_articles'] .' </h4></p>';
 
      echo' </div>';
     echo'  <!-- Featured news -->';
@@ -221,18 +222,14 @@ while ($resultat = $query2->fetch()) {
          echo'   <!--Image-->';
          echo'   <div class="view overlay rounded z-depth-1 mb-4">';
 
-            /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
              if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'"alt="Sample image">';
        
                }else {
                 echo '<img class="img-fluid" src="upload/default.png" >';
-                 //echo 'src="update/d.png"} ';
+               
                }
 
 
-          // echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
-
-
            echo'   <a>';
             echo'    <div class="mask rgba-white-slight"></div>';
             echo'  </a>';
@@ -273,421 +270,15 @@ while ($resultat = $query2->fetch()) {
    echo' <!--Grid column-->';
 
 echo '<hr style="border-width: 4px;">';
- // echo'</div>';
-
-
-    ?>
-</section>
-<!---debut ECONOMIE---->
-
-<!-- Section: Magazine v.2 -->
-<section class="magazine-section my-5">
-
-    <?php
-    $sql2 = "SELECT * FROM articles  where publie_articles = 2 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
-     $query2 = $bd->query($sql2);
-   // $query2 = $bd->prepare($sql2);
-    //$query2->execute();
-
-
-
-$resultat = $query2->fetch(); 
- //while ($resultat = $query2->fetch()) {
-
-   
-    
-
-   
-
-  echo '<!-- Section heading -->';;
-  echo' <h2 class="h1-responsive font-weight-bold text-center my-5">ECONOMIES</h2>';
- echo' <hr>';
-  echo'<!-- Section description -->';
-  
-
-  echo'<!-- Grid row -->';
-  echo'<div class="row">';
-
-    echo'<!-- Grid column -->';
-    echo'<div class="col-lg-6 col-md-12">';
-
-    echo'  <!-- Featured news -->';
-   echo'   <div class="single-news mb-lg-0 mb-4">';
-
-      echo'  <!-- Image -->';
-       echo' <div class="view overlay rounded z-depth-1-half mb-4">';
-
-        /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
-       
-                                   }else {
-                                    echo '<img class="img-fluid" src="upload/default.png" >';
-                                     //echo 'src="update/d.png"} ';
-                                   }
-                  
-
-
-       echo'   <a>';
-          echo'  <div class="mask rgba-white-slight"></div>';
-        echo'  </a>';
-      echo'  </div>';
-
-        echo'<!-- Data -->';
-        echo'<div class="news-data d-flex justify-content-between">';
-       //  echo' <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold"><i class="fa fa-cutlery pr-2"></i>'. $resultat['libele_categorie'].'</h6></a>';
-         echo' <p class="font-weight-bold dark-grey-text"><i class="fa fa-clock-o pr-2"></i>'. $resultat['date_articles'] .'</p>';
-       echo' </div>';
-
-       echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
-
-      echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
-
-     echo' </div>';
-    echo'  <!-- Featured news -->';
-
-   echo' </div>';
-
-   
-   echo' <!-- Grid column -->';
-
-//-------------------------------------------------------------------------------------------------
-
-  echo'  <!-- Grid column -->';
-   echo' <div class="col-lg-6 col-md-12">';
-
-     echo' <!-- Small news -->';
-    echo'  <div class="single-news mb-4">';
-while ($resultat = $query2->fetch()) {
-    echo'    <!-- Grid row -->';
-     echo'   <div class="row">';
-
-      echo'    <!-- Grid column -->';
-        echo'  <div class="col-md-3">';
-
-         echo'   <!--Image-->';
-         echo'   <div class="view overlay rounded z-depth-1 mb-4">';
-           echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
-           echo'   <a>';
-            echo'    <div class="mask rgba-white-slight"></div>';
-            echo'  </a>';
-           echo' </div>';
-
-         echo' </div>';
-        echo'  <!-- Grid column -->';
-
-        echo'  <!-- Grid column -->';
-         echo' <div class="col-md-9">';
-
-          echo'  <!-- Excerpt -->';
-          echo'  <p class="font-weight-bold dark-grey-text">'. $resultat['date_articles'] .'</p>';
-           echo' <div class="d-flex justify-content-between">';
-           echo'   <div class="col-11 text-truncate pl-0 mb-3">';
-              echo" <a href='index.php?id={$resultat['id_articles']}' class='dark-grey-text'>". $resultat['description_articles'] .'</a>';
-             echo' </div>';
-           echo'   <a><i class="fa fa-angle-double-right"></i></a>';
-           echo' </div>';
- 
-          echo'</div>';
-         echo' <!-- Grid column -->';
-
-        echo'</div>';
-        echo'<!-- Grid row -->';
-        echo '<hr>';
+ //echo'</div>';
+echo "</section>";
 }
-      echo'</div>'; 
-     echo' <!-- Small news -->';
-
-      echo'<!-- Small news -->';
-  
-
-     echo' </div>';
-     echo' <!-- Small news -->';
-
-    echo'</div>';
-   echo' <!--Grid column-->';
-
-echo '<hr style="border-width: 4px;">';
- // echo'</div>';
-
-
     ?>
-</section>
-<!-- Section: Magazine v.2 -->
-<!---fin  ECONOMIE---->
 
-<!---debut SPORTS---->
-<section class="magazine-section my-5">
 
-    <?php
-    $sql2 = "SELECT * FROM articles  where publie_articles = 1 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
-     $query2 = $bd->query($sql2);
-   // $query2 = $bd->prepare($sql2);
-    //$query2->execute();
+<!---fin POLITIQUES---->
 
 
-
-$resultat = $query2->fetch(); 
- //while ($resultat = $query2->fetch()) {
-
-   
-    
-
-   
-
-  echo '<!-- Section heading -->';;
-  echo' <h2 class="h1-responsive font-weight-bold text-center my-5">SPORTS</h2>';
- echo' <hr>';
-  echo'<!-- Section description -->';
-  
-
-  echo'<!-- Grid row -->';
-  echo'<div class="row">';
-
-    echo'<!-- Grid column -->';
-    echo'<div class="col-lg-6 col-md-12">';
-
-    echo'  <!-- Featured news -->';
-   echo'   <div class="single-news mb-lg-0 mb-4">';
-
-      echo'  <!-- Image -->';
-       echo' <div class="view overlay rounded z-depth-1-half mb-4">';
-
-        /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
-       
-                                   }else {
-                                    echo '<img class="img-fluid" src="upload/default.png" >';
-                                     //echo 'src="update/d.png"} ';
-                                   }
-                  
-
-
-       echo'   <a>';
-          echo'  <div class="mask rgba-white-slight"></div>';
-        echo'  </a>';
-      echo'  </div>';
-
-        echo'<!-- Data -->';
-        echo'<div class="news-data d-flex justify-content-between">';
-       //  echo' <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold"><i class="fa fa-cutlery pr-2"></i>'. $resultat['libele_categorie'].'</h6></a>';
-         echo' <p class="font-weight-bold dark-grey-text"><i class="fa fa-clock-o pr-2"></i>'. $resultat['date_articles'] .'</p>';
-       echo' </div>';
-
-       echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
-
-      echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
-
-     echo' </div>';
-    echo'  <!-- Featured news -->';
-
-   echo' </div>';
-
-   
-   echo' <!-- Grid column -->';
-
-//-------------------------------------------------------------------------------------------------
-
-  echo'  <!-- Grid column -->';
-   echo' <div class="col-lg-6 col-md-12">';
-
-     echo' <!-- Small news -->';
-    echo'  <div class="single-news mb-4">';
-while ($resultat = $query2->fetch()) {
-    echo'    <!-- Grid row -->';
-     echo'   <div class="row">';
-
-      echo'    <!-- Grid column -->';
-        echo'  <div class="col-md-3">';
-
-         echo'   <!--Image-->';
-         echo'   <div class="view overlay rounded z-depth-1 mb-4">';
-           echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
-           echo'   <a>';
-            echo'    <div class="mask rgba-white-slight"></div>';
-            echo'  </a>';
-           echo' </div>';
-
-         echo' </div>';
-        echo'  <!-- Grid column -->';
-
-        echo'  <!-- Grid column -->';
-         echo' <div class="col-md-9">';
-
-          echo'  <!-- Excerpt -->';
-          echo'  <p class="font-weight-bold dark-grey-text">'. $resultat['date_articles'] .'</p>';
-           echo' <div class="d-flex justify-content-between">';
-           echo'   <div class="col-11 text-truncate pl-0 mb-3">';
-              echo" <a href='index.php?id={$resultat['id_articles']}' class='dark-grey-text'>". $resultat['description_articles'] .'</a>';
-             echo' </div>';
-           echo'   <a><i class="fa fa-angle-double-right"></i></a>';
-           echo' </div>';
- 
-          echo'</div>';
-         echo' <!-- Grid column -->';
-
-        echo'</div>';
-        echo'<!-- Grid row -->';
-        echo '<hr>';
-}
-      echo'</div>'; 
-     echo' <!-- Small news -->';
-
-      echo'<!-- Small news -->';
-  
-
-     echo' </div>';
-     echo' <!-- Small news -->';
-
-    echo'</div>';
-   echo' <!--Grid column-->';
-
-echo '<hr style="border-width: 4px;">';
- // echo'</div>';
-
-
-    ?>
-</section>
-<!-- Section: Magazine v.2 -->
-<!---fin  SPORTS---->
-
-
-<!---debut SANTES---->
-<section class="magazine-section my-5">
-
-    <?php
-    $sql2 = "SELECT * FROM articles  where publie_articles = 1 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
-     $query2 = $bd->query($sql2);
-   // $query2 = $bd->prepare($sql2);
-    //$query2->execute();
-
-
-
-$resultat = $query2->fetch(); 
- //while ($resultat = $query2->fetch()) {
-
-   
-    
-
-   
-
-  echo '<!-- Section heading -->';;
-  echo' <h2 class="h1-responsive font-weight-bold text-center my-5">SANTES</h2>';
- echo' <hr>';
-  echo'<!-- Section description -->';
-  
-
-  echo'<!-- Grid row -->';
-  echo'<div class="row">';
-
-    echo'<!-- Grid column -->';
-    echo'<div class="col-lg-6 col-md-12">';
-
-    echo'  <!-- Featured news -->';
-   echo'   <div class="single-news mb-lg-0 mb-4">';
-
-      echo'  <!-- Image -->';
-       echo' <div class="view overlay rounded z-depth-1-half mb-4">';
-
-        /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_annonce'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
-       
-                                   }else {
-                                    echo '<img class="img-fluid" src="upload/default.png" >';
-                                     //echo 'src="update/d.png"} ';
-                                   }
-                  
-
-
-       echo'   <a>';
-          echo'  <div class="mask rgba-white-slight"></div>';
-        echo'  </a>';
-      echo'  </div>';
-
-        echo'<!-- Data -->';
-        echo'<div class="news-data d-flex justify-content-between">';
-       //  echo' <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold"><i class="fa fa-cutlery pr-2"></i>'. $resultat['libele_categorie'].'</h6></a>';
-         echo' <p class="font-weight-bold dark-grey-text"><i class="fa fa-clock-o pr-2"></i>'. $resultat['date_articles'] .'</p>';
-       echo' </div>';
-
-       echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
-
-      echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
-
-     echo' </div>';
-    echo'  <!-- Featured news -->';
-
-   echo' </div>';
-
-   
-   echo' <!-- Grid column -->';
-
-//-------------------------------------------------------------------------------------------------
-
-  echo'  <!-- Grid column -->';
-   echo' <div class="col-lg-6 col-md-12">';
-
-     echo' <!-- Small news -->';
-    echo'  <div class="single-news mb-4">';
-while ($resultat = $query2->fetch()) {
-    echo'    <!-- Grid row -->';
-     echo'   <div class="row">';
-
-      echo'    <!-- Grid column -->';
-        echo'  <div class="col-md-3">';
-
-         echo'   <!--Image-->';
-         echo'   <div class="view overlay rounded z-depth-1 mb-4">';
-           echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
-           echo'   <a>';
-            echo'    <div class="mask rgba-white-slight"></div>';
-            echo'  </a>';
-           echo' </div>';
-
-         echo' </div>';
-        echo'  <!-- Grid column -->';
-
-        echo'  <!-- Grid column -->';
-         echo' <div class="col-md-9">';
-
-          echo'  <!-- Excerpt -->';
-          echo'  <p class="font-weight-bold dark-grey-text">'. $resultat['date_articles'] .'</p>';
-           echo' <div class="d-flex justify-content-between">';
-           echo'   <div class="col-11 text-truncate pl-0 mb-3">';
-              echo" <a href='index.php?id={$resultat['id_articles']}' class='dark-grey-text'>". $resultat['description_articles'] .'</a>';
-             echo' </div>';
-           echo'   <a><i class="fa fa-angle-double-right"></i></a>';
-           echo' </div>';
- 
-          echo'</div>';
-         echo' <!-- Grid column -->';
-
-        echo'</div>';
-        echo'<!-- Grid row -->';
-        echo '<hr>';
-}
-      echo'</div>'; 
-     echo' <!-- Small news -->';
-
-      echo'<!-- Small news -->';
-  
-
-     echo' </div>';
-     echo' <!-- Small news -->';
-
-    echo'</div>';
-   echo' <!--Grid column-->';
-
-echo '<hr style="border-width: 4px;">';
- // echo'</div>';
-
-
-    ?>
-</section>
-<!-- Section: Magazine v.2 -->
-<!---fin  SANTES---->
 
 
 </div>

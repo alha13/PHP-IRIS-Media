@@ -210,7 +210,7 @@ $id = $_GET["cat"];
 $_SESSION['adresse'] = $adresse;
 //echo $_SESSION['adresse'];
 
-
+/*indiquer les adress du serveur d'hebergement*/
 if ($_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/index.php" || $_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/"){
    include('accueil.php');
   

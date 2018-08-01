@@ -6,12 +6,11 @@ require_once("config/connectbd.php");
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; " />
+        <meta http-equiv="Content-Type" content="text/html" />
         <meta charset="utf-8">
         <title>IRIS Médias</title>
-        <meta name="description" content="A responsive template with a large top header above 3 columns. This template uses position:sticky to attach the left 2 columns accordingly when the user scrolls. Dropdown search for in navbar. Feather icons."/>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content="Codeply">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
@@ -19,12 +18,13 @@ require_once("config/connectbd.php");
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
     </head>
     <body class="bg-light">
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #ee5017;">
@@ -100,14 +100,7 @@ require_once("config/connectbd.php");
                         </div>
                         <?php
 
-    /*$query = $bd->query("SELECT * FROM categorie")->fetchAll(); ?>
-                        <?php
-           // foreach ($query as $key => $value) {
-              echo '<option value="' . $value[0] . '">' . $value[1] .
-
-              //  '</option>';
-           // }*/
-            ?>
+                        ?>
                         <div class="card-body rounded-0 px-1">
                             <ul class="nav flex-lg-column flex-row">
                                 <li class="nav-item">
@@ -135,7 +128,10 @@ require_once("config/connectbd.php");
                     <div class="card rounded-0 border-right-0 border-left-0">
                         <div class="card-header rounded-0 text-white" style="background-color: rgba(237, 63, 0, 0.91); margin-bottom: 25px; text-align: center;">  
 <?php 
-if (isset($_GET['page'])) {
+/*debut de bande orange pour les titre*/
+if (isset($_GET['page']) || isset($_GET['cat'])) {
+
+  if (isset($_GET['page'])){
 
  switch ($_GET['page']) {
                             case 'art':
@@ -173,22 +169,21 @@ if (isset($_GET['page'])) {
                             break;  
                              
                         }
-                      } /*else echo ("<b>LE TOP DE L'ACTUS</b>");*/
-?>
-
-<?php
+                       /*else echo ("<b>LE TOP DE L'ACTUS</b>");*/
+                    }
 
 
-$id = 0;
 
 
-                         if (isset($_GET['cat'])) {
-                          $id = $_GET["cat"];
 
-$sql2 = "SELECT * FROM  categorie t2 where t2.id_categorie = $id  ";
-$query2 = $bd->prepare($sql2);
-$query2->execute(array("id" => $id));
-$resultat = $query2->fetch();
+
+if (isset($_GET['cat'])) {
+$id = $_GET["cat"];
+
+                $sql2 = "SELECT * FROM  categorie t2 where t2.id_categorie = $id  ";
+                $query2 = $bd->prepare($sql2);
+                $query2->execute(array("id" => $id));
+                $resultat = $query2->fetch();
                              switch ($_GET['cat']) {
                                     
                                      case $resultat['id_categorie']:
@@ -200,28 +195,30 @@ $resultat = $query2->fetch();
                                            default:
                                           echo ("<b>LE TOP DE L'ACTUS</b>");
                                           break;  
-                                }
-                                    
-                               
-                             } else {
-                            echo ("<b>LE TOP DE L'ACTUS</b>");   
-                        }
-  
-                                
-                      
-                      
-?>
+                 }
 
+             } 
 
+} else echo ("<b>LE TOP DE L'ACTUS</b>");
 
-                        </div>
-                        <div class="container">
+               echo '</div>';
+               echo '<div class="container">';
                             
-                               <?php 
-                           
-                      
+/*fin de bande orange pour les titre*/
 
-                    if (isset($_GET['page'])) {
+         $adresse = "http://".$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"];
+$_SESSION['adresse'] = $adresse;
+//echo $_SESSION['adresse'];
+
+
+if ($_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/index.php" || $_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/"){
+   include('accueil.php');
+  
+}                  
+                      
+else{
+
+if (isset($_GET['page'])) {
 
 try {
     switch ($_GET['page']) {
@@ -253,6 +250,9 @@ try {
       echo $e->errorMessage();
 }
 }
+
+
+
 else {
   //  include('accueil.php');
 }
@@ -277,6 +277,8 @@ if (isset($_GET['id'])) {
             echo $e->errorMessage();
       }
 }
+
+
 if (isset($_GET['idv'])) {
       $echo = $_GET['idv'];
       try {
@@ -297,6 +299,8 @@ if (isset($_GET['idv'])) {
             echo $e->errorMessage();
       }
 }
+
+
 if (isset($_GET['ida'])) {
       $echo = $_GET['ida'];
       try {
@@ -317,6 +321,8 @@ if (isset($_GET['ida'])) {
             echo $e->errorMessage();
       }
 }
+
+
 if (isset($_GET['idal'])) {
       $echo = $_GET['idal'];
       try {
@@ -337,6 +343,8 @@ if (isset($_GET['idal'])) {
             echo $e->errorMessage();
       }
 }
+
+
 if (isset($_GET['cat'])) {
       $echo = $_GET['cat'];
       try {
@@ -357,9 +365,14 @@ if (isset($_GET['cat'])) {
             echo $e->errorMessage();
       }
 }
-//include('accueil.php');
 
+
+//include('accueil.php');
+}
 ?>
+
+
+
 
                         </div>
                         <!--/card-body-->

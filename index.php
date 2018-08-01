@@ -211,7 +211,8 @@ $_SESSION['adresse'] = $adresse;
 //echo $_SESSION['adresse'];
 
 /*indiquer les adress du serveur d'hebergement*/
-if ($_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/index.php" || $_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/"){
+//https://irisactu.000webhostapp.com/index.php
+if ($_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/index.php" || $_SESSION['adresse'] == "http://localhost/test/PHP-IRIS-Media/" || $_SESSION['adresse'] == "http://irisactu.000webhostapp.com/index.php" || $_SESSION['adresse'] == "http://irisactu.000webhostapp.com/"){
    include('accueil.php');
   
 }                  

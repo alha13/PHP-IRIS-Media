@@ -77,9 +77,9 @@ $resultat = $query2->fetch();
 
 
 
-<!--DEBUT CAROUSEL---->
+<!--DEBUT CAROUSEL- color:  #FC6F20--->
 <div class="">
-  <h2 style="color: #373738">Info à la une....</h2>
+  <h2 style="color: #FC6F20">Info à la une....</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:620px; height: 370px">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -171,7 +171,7 @@ $resultat = $query2->fetch();
        echo' <div class="view overlay rounded z-depth-1-half mb-4">';
 
         /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_annonce'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
+             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
        
                                    }else {
                                     echo '<img class="img-fluid" src="upload/default.png" >';
@@ -192,7 +192,7 @@ $resultat = $query2->fetch();
        echo' </div>';
 
        echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles'].'</h3>';
+      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
 
       echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
 
@@ -220,7 +220,19 @@ while ($resultat = $query2->fetch()) {
 
          echo'   <!--Image-->';
          echo'   <div class="view overlay rounded z-depth-1 mb-4">';
-           echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
+
+            /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
+             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'"alt="Sample image">';
+       
+               }else {
+                echo '<img class="img-fluid" src="upload/default.png" >';
+                 //echo 'src="update/d.png"} ';
+               }
+
+
+          // echo'   <img class="img-fluid" src="'. $resultat['image_articles'] .'" alt="Sample image">';
+
+
            echo'   <a>';
             echo'    <div class="mask rgba-white-slight"></div>';
             echo'  </a>';
@@ -272,7 +284,7 @@ echo '<hr style="border-width: 4px;">';
 <section class="magazine-section my-5">
 
     <?php
-    $sql2 = "SELECT * FROM articles  where publie_articles = 1 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
+    $sql2 = "SELECT * FROM articles  where publie_articles = 2 AND id_categorie = 1 ORDER BY id_articles DESC LIMIT 5";
      $query2 = $bd->query($sql2);
    // $query2 = $bd->prepare($sql2);
     //$query2->execute();
@@ -306,7 +318,7 @@ $resultat = $query2->fetch();
        echo' <div class="view overlay rounded z-depth-1-half mb-4">';
 
         /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_annonce'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
+             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
        
                                    }else {
                                     echo '<img class="img-fluid" src="upload/default.png" >';
@@ -327,7 +339,7 @@ $resultat = $query2->fetch();
        echo' </div>';
 
        echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles'].'</h3>';
+      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
 
       echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
 
@@ -442,7 +454,7 @@ $resultat = $query2->fetch();
        echo' <div class="view overlay rounded z-depth-1-half mb-4">';
 
         /*echo'  <img class="img-fluid" src="'.$resultat['image_articles'] .'" alt="Sample image">';*/
-             if  (!empty ($resultat['image_annonce'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
+             if  (!empty ($resultat['image_articles'])){ echo'<img class="img-fluid pb-4" src=" '.$resultat['image_articles'].'">';
        
                                    }else {
                                     echo '<img class="img-fluid" src="upload/default.png" >';
@@ -463,7 +475,7 @@ $resultat = $query2->fetch();
        echo' </div>';
 
        echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles'].'</h3>';
+      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
 
       echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
 
@@ -600,7 +612,7 @@ $resultat = $query2->fetch();
        echo' </div>';
 
        echo' <!-- Excerpt -->';
-      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles'].'</h3>';
+      echo"<h3 class='font-weight-bold dark-grey-text mb-3' style='color: black'><a href='index.php?id={$resultat['id_articles']}' style='text-decoration:none; color:  #FC6F20'</a>".$resultat['titre_articles']."</h3>";
 
       echo'  <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4"><h4>'. $resultat['description_articles'] .'</h4></p>';
 

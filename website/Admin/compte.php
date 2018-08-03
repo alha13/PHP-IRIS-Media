@@ -178,7 +178,7 @@ body {
   <a href="compte.php">Compte</a>
   <a href="categorie.php">Categories</a>
   <a href="type_annonce.php">Type Annonce</a>
-  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 590px">
+  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 720px">
   </strong>
   </div>
 </div>

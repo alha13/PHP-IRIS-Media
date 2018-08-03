@@ -134,7 +134,7 @@ body {
   <a href="compte.php">Compte</a>
   <a href="categorie.php">Categories</a>
   <a href="type_annonce.php">Type Annonce</a>
-  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 610px">
+  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 740px">
   </strong>
   </div>
 </div>

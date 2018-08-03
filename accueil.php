@@ -154,7 +154,7 @@ $resultat = $query2->fetch();
 
   echo '<!-- Section azo heading -->';
 
-  echo' <h3 class="h1-responsive font-weight-bold text-center my-5" style="" id=""> '.strtoupper($value[1]).'</h3>'; 
+  echo' <h3 class="h1-responsive font-weight-bold text-center my-5" style="" id="">'.strtoupper($value[1]).'</h3>'; 
  echo' <hr>';
   echo'<!-- Section description -->';
   

@@ -5,7 +5,7 @@ $img = new imageClass();
 
 if (!empty($_POST["executer"]) ) {
    
-   // $categorie = htmlspecialchars(trim($_POST["categorie"]));
+ 
             $firstname = htmlspecialchars(trim($_POST["firstname"]));
 $sql = "INSERT INTO type_compte (libele_type_compte) VALUES(?)";
     $query = $bd->prepare($sql);
@@ -151,7 +151,7 @@ body {
   <a href="compte.php">Compte</a>
   <a href="categorie.php">Categories</a>
   <a href="type_annonce.php">Type Annonce</a>
-  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 610px">
+  <img class = "image" src="../image/logo.jpg"  height="44px" style="margin-left: 740px">
   </strong>
   </div>
 </div>

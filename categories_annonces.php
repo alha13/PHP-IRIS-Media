@@ -29,7 +29,7 @@ echo '<div class="" style="width: 340px; margin-right: 25px; margin-left: 76px;"
          //echo 'src="update/d.png"} ';
        }*/
 
-   if  (!empty ($resultat['image_articles'])){  echo '<humbnail [100%x225]" style="height: 225px; width: auto; display: block;" src="'. $resultat1['image_annonce'] .'"data-holder-rendered="true">';
+   if  (!empty ($resultat1['image_annonce'])){  echo '<humbnail [100%x225]" style="height: 225px; width: auto; display: block;" src="'. $resultat1['image_annonce'] .'"data-holder-rendered="true">';
        
        }else {
         echo '<img class="img-fluid" src="upload/default.png" >';
